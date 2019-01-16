@@ -1,0 +1,25 @@
+{
+    "version": 8,
+    "bearing": 0,
+    "pitch": 0,
+    "sources": {
+       "watermeterbox":{
+           "type": "vector",
+           "tiles": ["http://183.129.204.238:8083/geoserver/gwc/service/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER=chuzhou:watermeterbox&STYLE=&TILEMATRIX=EPSG:900913:{z}&TILEMATRIXSET=EPSG:900913&FORMAT=application/x-protobuf;type=mapbox-vector&TILECOL={x}&TILEROW={y}"]
+
+       }
+    },
+    "layers":[
+        {
+            "id":"watermeterbox",
+            "type":"circle",
+            "source":"watermeterbox",
+            "source-layer":"watermeterbox",
+            "paint": {
+                "circle-color": "#F51205"
+            }
+        }
+    
+    ]
+
+}
