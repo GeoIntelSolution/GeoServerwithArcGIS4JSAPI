@@ -32,10 +32,10 @@ require([
     var tileInfo = TdtZheJiangTileInfo;
     var spatialReference = new SpatialReference({ wkid: 4326 });
     var fullextent = new Extent({
-      xmax: 31.608534,
-      xmin: 26.69868,
-      ymax: 122.95991 ,
-      ymin: 117.55337 ,
+      ymax: 31.608534,
+      ymin: 26.69868,
+      xmax: 122.95991 ,
+      xmin: 117.55337 ,
       spatialReference: spatialReference
     });
   
@@ -44,7 +44,7 @@ require([
       map: map,
       container: "viewDiv",
       center: [120, 30],
-      zoom: 7
+      zoom: 14
     });
   
     view.when(function() {

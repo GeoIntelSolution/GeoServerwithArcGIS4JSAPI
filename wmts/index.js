@@ -42,7 +42,7 @@ fs.readFile(__dirname+'/wmts.xml',function(err,data){
                     console.log(matrix.ScaleDenominator[0],",");
                     var data={
                         "level": matrix['ows:Identifier'][0],
-                        "resolution": calcResolution(parseInt(matrix['ows:Identifier'][0],10)),
+                        "resolution": calcResolution(matrix.ScaleDenominator[0]),
                         "scale": matrix.ScaleDenominator[0]
                     };
                     loadArray.push(data);

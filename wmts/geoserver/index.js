@@ -5,8 +5,8 @@ require([
     "esri/geometry/Extent",
     "esri/geometry/SpatialReference",
     "esri/layers/WebTileLayer",
-    "tdt/GeoServerTileInfo.js",
-    "tdt/GeoServerUrlTemplate.js",
+    "geoserver/GeoServerTileInfo.js",
+    "geoserver/GeoServerUrlTemplate.js",
     "esri/widgets/LayerList",
     "dojo/domReady!"
   ], function(
@@ -32,10 +32,10 @@ require([
     var tileInfo = GeoServerTileInfo;
     var spatialReference = new SpatialReference({ wkid: 4326 });
     var fullextent = new Extent({
-      xmax: 121.028515625,
-      xmin: 120.74140625000001,
-      ymax: 30.25888671875,
-      ymin: 29.795996093749999,
+      xmax: 121.44336027949723,
+      xmin: 120.80046621986827,
+      ymax: 31.778970712524586,
+      ymin: 31.23059688418549,
       spatialReference: spatialReference
     });
   
@@ -43,7 +43,7 @@ require([
     var view = new MapView({
       map: map,
       container: "viewDiv",
-      center: [120, 30],
+      center: [120.9, 31.5],
       zoom: 10
     });
   
@@ -72,16 +72,31 @@ require([
     // esriConfig.request.corsEnabledServers.push("t3.tianditu.com");
     // esriConfig.request.corsEnabledServers.push("t4.tianditu.com");
   
-    var TDT_Layer = new WebTileLayer({
+    var GEO_Layer = new WebTileLayer({
       id: "TiandituBase",
       title: "Tianditu BaseLayer",
       tileInfo: tileInfo,
       spatialReference: spatialReference,
-      urlTemplate: GeoServerUrlTemplate.GEO
+      urlTemplate: GeoServerUrlTemplate.GEO,
     });
- 
+   
+    var PIPE_Layer = new WebTileLayer({
+      id: "TiandituBase",
+      title: "Tianditu BaseLayer",
+      tileInfo: tileInfo,
+      spatialReference: spatialReference,
+      urlTemplate: GeoServerUrlTemplate.TEST,
+    });
+
+    var POINT_Layer = new WebTileLayer({
+      id: "TiandituBase",
+      title: "Tianditu BaseLayer",
+      tileInfo: tileInfo,
+      spatialReference: spatialReference,
+      urlTemplate: GeoServerUrlTemplate.POINT,
+    });
   
-    map.addMany([TDT_Layer]);
+    map.addMany([GEO_Layer,PIPE_Layer,POINT_Layer]);
   });
   
   //
