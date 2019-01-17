@@ -1,0 +1,213 @@
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0.0/wmtsGetCapabilities_response.xsd" version="1.0.0">
+<ows:ServiceIdentification>
+<ows:Title>浙江天地图电子地图</ows:Title>
+<ows:Abstract>浙江天地图电子地图</ows:Abstract>
+<ows:Keywords>
+<ows:Keyword>浙江天地图电子地图</ows:Keyword>
+</ows:Keywords>
+<ows:ServiceType>OGC WMTS</ows:ServiceType>
+<ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+<ows:Fees>none</ows:Fees>
+<ows:AccessConstraints>none</ows:AccessConstraints>
+</ows:ServiceIdentification>
+<ows:ServiceProvider>
+<ows:ProviderName>浙江省地理空间数据交换中心</ows:ProviderName>
+<ows:ProviderSite xlink:href="http://ditu.zj.cn/"/>
+<ows:ServiceContact>
+<ows:IndividualName/>
+<ows:PositionName/>
+<ows:ContactInfo>
+<ows:Phone>
+<ows:Voice/>
+<ows:Facsimile/>
+</ows:Phone>
+<ows:Address>
+<ows:DeliveryPoint>浙江省杭州市保俶北路83号</ows:DeliveryPoint>
+<ows:City>杭州</ows:City>
+<ows:AdministrativeArea>档案馆4楼</ows:AdministrativeArea>
+<ows:PostalCode>310012</ows:PostalCode>
+<ows:Country>中国</ows:Country>
+<ows:ElectronicMailAddress/>
+</ows:Address>
+</ows:ContactInfo>
+</ows:ServiceContact>
+</ows:ServiceProvider>
+<ows:OperationsMetadata>
+<ows:Operation name="GetCapabilities">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="http://ditu.zj.cn/services/wmts/emap?">
+<ows:Constraint name="GetEncoding">
+<ows:AllowedValues>
+<ows:Value>KVP</ows:Value>
+</ows:AllowedValues>
+</ows:Constraint>
+</ows:Get>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+<ows:Operation name="GetTile">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="http://ditu.zj.cn/services/wmts/emap?">
+<ows:Constraint name="GetEncoding">
+<ows:AllowedValues>
+<ows:Value>KVP</ows:Value>
+</ows:AllowedValues>
+</ows:Constraint>
+</ows:Get>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+</ows:OperationsMetadata>
+<Contents>
+<Layer>
+<ows:Title>浙江天地图电子地图</ows:Title>
+<ows:Abstract>浙江天地图电子地图</ows:Abstract>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>117.55337 26.69868</ows:LowerCorner>
+<ows:UpperCorner>122.95991 31.608534</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+<ows:Identifier>ZJEMAP_2D</ows:Identifier>
+<Style isDefault="true">
+<ows:Identifier>default</ows:Identifier>
+</Style>
+<Format>image/jpgpng</Format>
+<TileMatrixSetLink>
+<TileMatrixSet>esritilematirx</TileMatrixSet>
+</TileMatrixSetLink>
+<ResourceURL format="" resourceType="tile" template="http://ditu.zj.cn/services/wmts/emap/default/esritilematirx/{TileMatrix}/{TileRow}/{TileCol}"/>
+</Layer>
+<TileMatrixSet>
+<ows:Identifier>esritilematirx</ows:Identifier>
+<ows:SupportedCRS>urn:ogc:def:crs:EPSG::4490</ows:SupportedCRS>
+<TileMatrix>
+<ows:Identifier>7</ows:Identifier>
+<ScaleDenominator>4362931.898541665</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>108</MatrixWidth>
+<MatrixHeight>23</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>8</ows:Identifier>
+<ScaleDenominator>2181465.949270837</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>216</MatrixWidth>
+<MatrixHeight>45</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>9</ows:Identifier>
+<ScaleDenominator>1090732.9746354138</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>432</MatrixWidth>
+<MatrixHeight>90</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>10</ows:Identifier>
+<ScaleDenominator>545366.4873177079</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>863</MatrixWidth>
+<MatrixHeight>180</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>11</ows:Identifier>
+<ScaleDenominator>272683.2436588544</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>1726</MatrixWidth>
+<MatrixHeight>359</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>12</ows:Identifier>
+<ScaleDenominator>136341.62182942673</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>3451</MatrixWidth>
+<MatrixHeight>717</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>13</ows:Identifier>
+<ScaleDenominator>68170.81091471355</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>6901</MatrixWidth>
+<MatrixHeight>1433</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>14</ows:Identifier>
+<ScaleDenominator>34085.405457356734</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>13802</MatrixWidth>
+<MatrixHeight>2866</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>15</ows:Identifier>
+<ScaleDenominator>17042.702728678414</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>27603</MatrixWidth>
+<MatrixHeight>5732</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>16</ows:Identifier>
+<ScaleDenominator>8521.351364339187</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>55205</MatrixWidth>
+<MatrixHeight>11464</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>17</ows:Identifier>
+<ScaleDenominator>4260.675682169598</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>110410</MatrixWidth>
+<MatrixHeight>22927</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>18</ows:Identifier>
+<ScaleDenominator>2130.3378410847945</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>220820</MatrixWidth>
+<MatrixHeight>45854</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>19</ows:Identifier>
+<ScaleDenominator>1065.168920542402</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>441640</MatrixWidth>
+<MatrixHeight>91708</MatrixHeight>
+</TileMatrix>
+<TileMatrix>
+<ows:Identifier>20</ows:Identifier>
+<ScaleDenominator>532.5844602711991</ScaleDenominator>
+<TopLeftCorner>90 -180</TopLeftCorner>
+<TileWidth>256</TileWidth>
+<TileHeight>256</TileHeight>
+<MatrixWidth>883280</MatrixWidth>
+<MatrixHeight>183416</MatrixHeight>
+</TileMatrix>
+</TileMatrixSet>
+</Contents>
+<ServiceMetadataURL xlink:href="http://ditu.zj.cn/services/wmts/emap"/>
+</Capabilities>
